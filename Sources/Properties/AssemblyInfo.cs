@@ -7,7 +7,7 @@ using System;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Sharp3D.Math")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("2D and 3D geometry library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ekampf")]
 [assembly: AssemblyProduct("Sharp3D.Math")]
