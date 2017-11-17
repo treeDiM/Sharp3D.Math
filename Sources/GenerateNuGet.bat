@@ -1,0 +1,1 @@
+msbuild /t:pack Sharp3D.Math.csproj  /p:Configuration=Release;Platform=AnyCPU;TargetFrameworkVersion=v4.5

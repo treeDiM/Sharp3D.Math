@@ -42,7 +42,7 @@
     <TargetFrameworkProfile />
     <TargetFramework>4.5</TargetFramework>
     <PackageId>Sharp3D.Math</PackageId>
-    <PackageVersion>1.0.0.0</PackageVersion>
+    <PackageVersion>1.0.3.0</PackageVersion>
     <Authors>ekampf</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>Sharp3D.Math originally by Eran Kampf but modified by Francois Gasnier</PackageReleaseNotes>
@@ -133,7 +133,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if $(ConfigurationName) == Release "$(SolutionDir)Signfile.bat" $(TargetPath)</PostBuildEvent>
+    <PostBuildEvent>if $(ConfigurationName) == Release "$(ProjectDir)Signfile.bat" $(TargetPath)</PostBuildEvent>
     <DelaySign>false</DelaySign>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

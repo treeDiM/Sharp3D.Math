@@ -1,7 +1,7 @@
 @echo off
 
 REM sign the file...
-REM "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe" sign /f "K:\Github\Signing\treeDiM.pfx" /p 2B3gmehk %1
+REM "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\signtool.exe" sign /f "D:\Github\Signing\treeDiM.pfx" /p 2B3gmehk %1
 
 REM if %errorlevel% neq 0 exit /b %errorlevel%
 
