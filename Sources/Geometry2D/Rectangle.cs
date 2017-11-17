@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Globalization;
 
 using Sharp3D.Math.Core;
 #endregion
@@ -113,7 +114,7 @@ namespace Sharp3D.Math.Geometry2D
         /// <returns>A string representation of this object.</returns>
         public override string ToString()
         {
-            return string.Format("Rectangle(Origin={0}, Dimensions={1})", _ptOrigin, _dimensions);
+            return string.Format(CultureInfo.InvariantCulture, "Rectangle(Origin={0}, Dimensions={1})", _ptOrigin, _dimensions);
         }
         #endregion
     }

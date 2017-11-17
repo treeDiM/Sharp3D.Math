@@ -26,6 +26,7 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 using Sharp3D.Math.Core;
 #endregion
@@ -251,7 +252,7 @@ namespace Sharp3D.Math.Geometry2D
 		/// <returns>A string representation of this object.</returns>
 		public override string ToString()
 		{
-			return string.Format("OrientedBox(Center={0}, Axis1={1}, Axis2={2}, Extent1={3}, Extent2={4})",
+			return string.Format(CultureInfo.InvariantCulture, "OrientedBox(Center={0}, Axis1={1}, Axis2={2}, Extent1={3}, Extent2={4})",
 				Center, Axis1, Axis2, Extent1, Extent2);
 		}
 		#endregion

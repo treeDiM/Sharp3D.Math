@@ -25,6 +25,7 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 using Sharp3D.Math.Core;
 #endregion
@@ -150,7 +151,7 @@ namespace Sharp3D.Math.Geometry2D
 		/// <returns></returns>
 		public override string ToString()
 		{
-			return string.Format("({0}, {1})", _c, _r);
+			return string.Format(CultureInfo.InvariantCulture, "({0}, {1})", _c, _r);
 		}
 		#endregion
 

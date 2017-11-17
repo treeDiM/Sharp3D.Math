@@ -25,6 +25,7 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 using Sharp3D.Math.Core;
 #endregion
@@ -157,7 +158,7 @@ namespace Sharp3D.Math.Geometry3D
 		/// <returns>A string representation of this object.</returns>
 		public override string ToString()
 		{
-			return string.Format("Segment(P0={0}, P1={1})", _p0, _p1);
+			return string.Format(CultureInfo.InvariantCulture, "Segment(P0={0}, P1={1})", _p0, _p1);
 		}
 		#endregion
 

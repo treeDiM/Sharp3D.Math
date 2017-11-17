@@ -30,6 +30,7 @@ using System.Security.Permissions;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.ComponentModel;
+using System.Globalization;
 
 #endregion
 
@@ -466,7 +467,7 @@ namespace Sharp3D.Math.Core
 		/// <returns>A string representation of this object.</returns>
 		public override string ToString()
 		{
-			return string.Format("2x2[{0}, {1}, {2}, {3}]",
+			return string.Format(CultureInfo.InvariantCulture, "2x2[{0}, {1}, {2}, {3}]",
 				_m11, _m12, _m21, _m22);
 		}
 		#endregion

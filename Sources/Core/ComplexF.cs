@@ -26,6 +26,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 #endregion
 
@@ -1067,7 +1068,7 @@ namespace Sharp3D.Math.Core
 		/// <returns>A string representation of this object.</returns>
 		public override string ToString()
 		{
-			return string.Format("({0}, {1})", _real, _image);
+			return string.Format(CultureInfo.InvariantCulture, "({0}, {1})", _real, _image);
 		}
 		#endregion
 

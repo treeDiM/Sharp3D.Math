@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharp3D.Math", "Sharp3D.Math.csproj", "{8F9BA4D3-D6AF-42A6-B74F-0DF6568C148B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharp3D.Math", "Sharp3D.Math.csproj", "{8F9BA4D3-D6AF-42A6-B74F-0DF6568C148B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB27364E-796F-4EA7-9560-050E346C3CED}
 	EndGlobalSection
 EndGlobal

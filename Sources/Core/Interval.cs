@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Globalization;
 
 #endregion
 
@@ -164,10 +165,10 @@ namespace Sharp3D.Math.Core
 		{
 			switch (_type)
 			{
-				case Type.Open: return string.Format(formatOpen, _min, _max);
-				case Type.Closed: return string.Format(formatClosed, _min, _max);
-				case Type.ClosedOpen: return string.Format(formatClosedOpen, _min, _max);
-				case Type.OpenClosed: return string.Format(formatOpenClosed, _min, _max);
+				case Type.Open: return string.Format(CultureInfo.InvariantCulture, formatOpen, _min, _max);
+				case Type.Closed: return string.Format(CultureInfo.InvariantCulture, formatClosed, _min, _max);
+				case Type.ClosedOpen: return string.Format(CultureInfo.InvariantCulture, formatClosedOpen, _min, _max);
+				case Type.OpenClosed: return string.Format(CultureInfo.InvariantCulture, formatOpenClosed, _min, _max);
 				default:
 					return "Unknown interval type.";
 			}

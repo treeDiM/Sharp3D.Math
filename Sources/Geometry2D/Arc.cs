@@ -26,6 +26,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using Sharp3D.Math.Core;
+using System.Globalization;
 #endregion
 
 namespace Sharp3D.Math.Geometry2D
@@ -245,7 +246,7 @@ namespace Sharp3D.Math.Geometry2D
         /// <returns>A string representation of this object.</returns>
         public override string ToString()
         {
-            return string.Format("Arc(Center={0}, Radius={1}, Angle0={2}, Angle1={3})", _pCenter, _angle0, _angle1);
+            return string.Format(CultureInfo.InvariantCulture, "Arc(Center={0}, Radius={1}, Angle0={2}, Angle1={3})", _pCenter, _angle0, _angle1);
         }
         #endregion
 

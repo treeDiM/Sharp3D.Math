@@ -27,6 +27,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 using System.ComponentModel;
+using System.Globalization;
 
 using Sharp3D.Math.Core;
 
@@ -175,7 +176,7 @@ namespace Sharp3D.Math.Geometry2D
 		/// <returns>A string representation of this object.</returns>
 		public override string ToString()
 		{
-			return string.Format("Ray(Origin={0}, Direction={1})", _origin, _direction);
+			return string.Format(CultureInfo.InvariantCulture, "Ray(Origin={0}, Direction={1})", _origin, _direction);
 		}
 		#endregion
 

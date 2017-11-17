@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Globalization;
 
 #endregion
 
@@ -357,7 +358,7 @@ namespace Sharp3D.Math.Core
 
 				sb.Append((_coefficients[i] < 0) ? "-" : "+");
 
-				sb.Append(_coefficients[i].ToString());
+				sb.Append(string.Format(CultureInfo.InvariantCulture, "{0}", _coefficients[i]));
 				sb.Append("x");
 
 				if (i > 1)
